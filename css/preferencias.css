@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, serif;
+}
+
+body {
+    background-image: linear-gradient(lightblue, #40e0d0, #ffae37);
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+.titulo__principal {
+    font-size: 32px;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prefs {
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.subtitulo {
+    font-size: 24px;
+    margin: 10px 0 15px 0;
+}
+
+.info__pessoal {
+    flex-direction: column;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.input {
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 5px 0;
+    min-width: 300px;
+}
+
+.tel__dt {
+    justify-content: space-evenly;
+}
+
+.prefs__tipo {
+    justify-content: space-evenly;
+}
+
+.tipo {
+    align-items: center;
+    gap: 5px;
+}
+
+.tipo input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+.tipo label {
+    font-size: 20px;
+}
+
+.prefs__genero {
+    flex-direction: column;
+    align-items: center;
+}
+
+.generos {
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.generos label {
+    font-size: 20px;
+}
+
+.genero {
+    gap: 5px;
+    align-items: center;
+    width: 30%;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.prefs__gostos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.txt__area {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    resize: none;
+}
+
+.prefs__botoes {
+    justify-content: space-evenly;
+}
+
+.botao {
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    font-size: 18px;
+}
+
+.limpar {
+    background-color: orange;
+}
+
+.limpar:hover {
+    color: white;
+    background-color: darkorange;
+}
+
+.enviar {
+    background-color: #40e0d0;
+}
+
+.enviar:hover {
+    background-color: deepskyblue;
+    color: white;
+}

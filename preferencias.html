@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências</title>
+    <link rel="stylesheet" href="./css/preferencias.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo titulo__principal">Nos diga suas Preferências</h1>
+    </header>
+
+    <form action="#" class="prefs flex">
+        <div class="flex info__pessoal">
+            <label for="nome" class="label">Nome</label>
+            <input type="text" class="input" name="nome" id="nome" placeholder="Informe seu nome">
+        </div>
+        <div class="flex info__pessoal">
+            <label for="email" class="label">E-Mail</label>
+            <input type="email" class="input" name="email" id="email" placeholder="Informe seu e-mail">
+        </div>
+        <div class="flex tel__dt">
+            <div class="flex info__pessoal">
+                <label for="telefone" class="label">Telefone</label>
+                <input type="tel" class="input" name="telefone" id="telefone" placeholder="Informe seu telefone">
+            </div>
+            <div class="flex info__pessoal">
+                <label for="dt_nasc" class="label">Data de Nascimento</label>
+                <input type="date" class="input" name="dt_nasc" id="dt_nasc" value="2023-04-19">
+            </div>
+        </div>
+        <div class="flex prefs__tipo">
+            <h2 class="titulo subtitulo">Qual dos seguintes você prefere?</h2>
+
+            <div class="tipo flex">
+                <input type="radio" id="filmes" name="tipo" value="Filmes">
+                <label for="filmes">Filmes</label>
+            </div>
+            <div class="tipo flex">
+                <input type="radio" id="series" name="tipo" value="Séries">
+                <label for="series">Séries</label>
+            </div>
+            <div class="tipo flex">
+                <input type="radio" id="documentarios" name="tipo" value="Documentários">
+                <label for="documentarios">Documentários</label>
+            </div>
+            <div class="tipo flex">
+                <input type="radio" id="livros" name="tipo" value="Livros">
+                <label for="livros">Livros</label>
+            </div>
+        </div>
+        <div class="prefs__genero flex">
+            <h2 class="titulo subtitulo">Quais destes gêneros você prefere?</h2>
+
+            <div class="flex generos">
+                <div class="genero flex">
+                    <input type="checkbox" id="romance">
+                    <label for="romance">Romance</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="acao">
+                    <label for="acao">Ação e Aventura</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="ficcao">
+                    <label for="ficcao">Ficção</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="terror">
+                    <label for="terror">Terror</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox"  id="drama">
+                    <label for="drama">Drama</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="comedia">
+                    <label for="comedia">Comédia</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="ficcao_cientifica">
+                    <label for="ficcao_cientifica">Ficção Científica</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="misterio">
+                    <label for="misterio">Mistério</label>
+                </div>
+                <div class="genero flex">
+                    <input type="checkbox" id="musical">
+                    <label for="musical">Musical</label>
+                </div>
+            </div>
+        </div>
+        <div class="prefs__gostos flex">
+            <label class="label" for="gostos">Fale um pouco mais dos seus gostos pra gente</label>
+            <textarea class="txt__area" name="gostos" id="gostos" cols="30" rows="10"></textarea>
+        </div>
+        <div class="prefs__botoes flex">
+            <button class="botao limpar">Limpar</button>
+            <button class="botao enviar">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

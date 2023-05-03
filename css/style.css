@@ -27,7 +27,7 @@ body {
 }
 
 .menu__item__link {
-    font-size: 20px;
+    font-size: 1rem;
     color: black;
     font-weight: bolder;
     text-decoration: none;
@@ -124,4 +124,52 @@ span {
 .rodape a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 768px){
+    .banner {
+        width: 100%;
+    }
+
+    .personagens ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 460px){
+    * {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        width: 90%;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .secao {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .imagem {
+        width: 90%;
+    }
+
+    .sinopse {
+        width: 80%;
+    }
+
+    .sinopse p {
+        font-size: 1rem;
+    }
+
+    .rodape span {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
 }
